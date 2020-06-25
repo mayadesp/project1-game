@@ -34,10 +34,10 @@ function randomWord(ar) {
 //fonction pour créer une div pour chaque mot + lui ajouter la classe word pour movedown
 function placeWord() {
 
-  if (score>=10 ) {
+  if (score>=2 ) {
     document.getElementById("line").innerHTML = "";
     document.getElementById("line").innerHTML = "<h3> LEVEL 2 </h3>";
-    wordDisplayElement.style.backgroundColor= "#FF6347";
+    wordDisplayElement.style.backgroundColor= "#b9faf8";
     
   
     var max = Number(wordsList.length);
@@ -52,11 +52,11 @@ function placeWord() {
     "tuvasperdre");
 
   }
-  if (score>15){
+  if (score>3){
 
     document.getElementById("line").innerHTML = "";
     document.getElementById("line").innerHTML = "<h3> FINAL BOSS </h3>"
-    wordDisplayElement.style.backgroundColor= "#0000FF";
+    wordDisplayElement.style.backgroundColor= "#fe5f55";
     var max = Number(wordsList.length);
     wordsList.splice(0,(max));
     wordsList.push("Anticonstitutionnellement");
