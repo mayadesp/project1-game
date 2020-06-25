@@ -67,7 +67,7 @@ h3 {
     height: 100px;
     z-index: 1;
     overflow: hidden;
-    background-image: url("//img/giphy\ \(1\).gif");
+    background-image: url("./img/giphy\ \(1\).gif");
     background-size: contain;
 
 }
