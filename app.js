@@ -34,7 +34,7 @@ function randomWord(ar) {
 //fonction pour créer une div pour chaque mot + lui ajouter la classe word pour movedown
 function placeWord() {
 
-  if (score>=2 ) {
+  if (score>=10) {
     document.getElementById("line").innerHTML = "";
     document.getElementById("line").innerHTML = "<h3> LEVEL 2 </h3>";
     wordDisplayElement.style.backgroundColor= "#b9faf8";
@@ -52,7 +52,7 @@ function placeWord() {
     "tuvasperdre");
 
   }
-  if (score>3){
+  if (score>15){
 
     document.getElementById("line").innerHTML = "";
     document.getElementById("line").innerHTML = "<h3> FINAL BOSS </h3>"
