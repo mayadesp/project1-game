@@ -118,7 +118,7 @@ function check() {
             document.getElementById('loser').play();
             document.getElementById("container").innerHTML = "<h1> Game Over </h1><h2>Score: " + score + "</h2><button>PLAY AGAIN</button>";
             document.querySelector('button').addEventListener('click', () => {
-              location.href='/game.html';
+              location.href='./game.html';
             })
           
             
