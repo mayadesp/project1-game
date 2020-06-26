@@ -65,6 +65,14 @@ function placeWord() {
   if(score == 10 || score == 15) {
     document.getElementById('level').play();
   }
+
+  if (score == 17) {
+    document.getElementById('level').play();
+    document.getElementById("container").innerHTML = "<h1> WAOUHHHH YOU WON </h1><h2>Score: " + score + "</h2><button>TRY AGAIN ?</button>";
+            document.querySelector('button').addEventListener('click', () => {
+              location.href='./game.html';
+            })
+  }
   
   var word = randomWord(wordsList);
   var wordDiv = document.createElement("div");
@@ -91,7 +99,7 @@ function wordCreator() {
     if (!gameOver) {
       interval = interval >= 500 ? interval - 200 : interval;
       placeWord();
-      console.log(interval);
+      // console.log(interval);
 
     }
     
